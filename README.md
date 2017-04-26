@@ -26,9 +26,10 @@ The api is in use with the [Android application DashboardAndroid found here](htt
 
 ### How to use
 All incomming data must be logged. This is done by first requiring the api.php file into the php file you will be logging visits to. 
-
-	require_once api.php;
-
+```php 
+require_once ___DIR___ . "/api.php";
+```
 You can then use the method "log()". Log takes a single IP address and a "page visited" ID, and fills in the rest. It will use the [http://ipinfo.io API](http://ipinfo.io) to get addidtional information about the IP address in question. Every other field in the table "traffic_visitors" except id and ip will be filled out with data from here. 
-
-	log("192.168.0.1", 1); // Where the second parameter is the page visited from. i.e. HOMEPAGE = 1
+```php 
+log("192.168.0.1", 1); // Where the second parameter is the page visited from. i.e. HOMEPAGE = 1
+```
