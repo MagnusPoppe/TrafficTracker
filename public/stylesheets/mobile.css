@@ -1,0 +1,30 @@
+@media (max-width: 767px)
+{
+
+}
+
+@media (max-width: 450px)
+{
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    .date {
+        width: 0;
+        display: none !important;
+    }
+
+    #diary{
+        width: 90%;
+    }
+
+    #diary article
+    {
+        padding: 0 !important;
+    }
+
+    #about, #resources {
+        margin: 10px !important;
+        width: 90% !important;
+    }
+}
